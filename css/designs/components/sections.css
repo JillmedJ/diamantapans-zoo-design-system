@@ -1,0 +1,99 @@
+/* =========================================
+   Section component (bas)
+   ========================================= */
+
+/* Bas: alla sektioner */
+.section {
+  /* Bakgrund neutral – låt sidan styra färg */
+  background-color: transparent;
+
+  /* Vertikal spacing – icke-hero-sektioner
+       "10, 80, 10" i tokens, inte hårdkodat */
+  padding-top: var(--space-section-top, var(--space-10));
+  padding-bottom: var(--space-section-bottom, var(--space-80));
+
+  /* För att undvika att innehåll klistrar mot kanter på små skärmar */
+  padding-left: var(--space-page-inline, var(--space-10));
+  padding-right: var(--space-page-inline, var(--space-10));
+
+  /* Scroll-justering för fixed navigation
+       så att sektionen inte hamnar under nav vid anchor-klick */
+  scroll-margin-top: var(--nav-offset, var(--space-80));
+}
+/* =========================================
+   Section inner container
+   ========================================= */
+
+.section__inner {
+  /* Maxbredd styrs av tokens */
+  max-width: var(--layout-content-max-width, 72rem);
+
+  /* Centrera innehållet */
+  margin-inline: auto;
+
+  /* Standard-flow */
+  display: block;
+}
+/* =========================================
+   Section header (titel + ev. ingress)
+   ========================================= */
+
+.section__header {
+  margin-bottom: var(--space-40);
+}
+
+.section__title {
+  /* Använd typografi-tokens */
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-section-title, var(--font-size-xl));
+  line-height: var(--line-height-heading, 1.2);
+
+  /* Kontrast och färg via tokens */
+  color: var(--color-text-heading);
+  margin-bottom: var(--space-10);
+}
+
+.section__subtitle {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body, var(--font-size-m));
+  line-height: var(--line-height-body, 1.5);
+  color: var(--color-text-muted);
+}
+/* =========================================
+   Hero section (modifier)
+   ========================================= */
+
+.section--hero {
+  /* Mer luft upp och ner */
+  padding-top: var(--space-120);
+  padding-bottom: var(--space-120);
+
+  /* Ofta annan bakgrund */
+  background-color: var(--color-hero-background);
+}
+
+/* =========================================
+   Responsivitet
+   ========================================= */
+
+/* Mindre skärmar – lite mindre vertikal spacing */
+@media (max-width: 48rem) {
+  .section {
+    padding-top: var(--space-40);
+    padding-bottom: var(--space-60);
+    padding-left: var(--space-10);
+    padding-right: var(--space-10);
+  }
+
+  .section__title {
+    font-size: var(--font-size-l);
+  }
+}
+
+/* Större skärmar – behåll maxbredd men ge mer luft om du vill */
+@media (min-width: 80rem) {
+  .section {
+    padding-top: var(--space-80);
+    padding-bottom: var(--space-100);
+  }
+}

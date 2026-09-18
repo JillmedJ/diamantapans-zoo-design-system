@@ -4,6 +4,10 @@
   --ds-gray-border: #bdbdbd; /* mörkare än gray-300 */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ========================= */
 /* FÄRGSEKTION               */
 /* ========================= */
