@@ -1,0 +1,316 @@
+/* ========================================= */
+/* FLEX UTILITIES                             */
+/* ========================================= */
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ========================================= */
+/* GRID UTILITIES                             */
+/* ========================================= */
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.grid-auto {
+  display: grid;
+  grid-auto-flow: column;
+  gap: var(--space-md);
+}
+
+/* ========================================= */
+/* TEXT UTILITIES                             */
+/* ========================================= */
+
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.lead {
+  font-size: var(--font-h3);
+  line-height: var(--line-normal);
+}
+
+/* Textfärger för ikoner och text */
+.text-green-dark {
+  color: var(--color-green-dark);
+}
+
+.text-green-mid {
+  color: var(--color-green-mid);
+}
+
+.text-blue-mid {
+  color: var(--color-blue-mid);
+}
+
+.text-lime-pop {
+  color: var(--color-lime-pop);
+}
+
+.green-300-dark {
+  color: var(--icon-green-300-dark);
+}
+
+/* ========================================= */
+/* VISIBILITY UTILITIES                       */
+/* ========================================= */
+
+.hidden {
+  display: none !important;
+}
+
+/* ========================================= */
+/* MAX-WIDTH UTILITIES                        */
+/* ========================================= */
+
+.max-400 {
+  max-width: 400px;
+}
+
+.max-600 {
+  max-width: 600px;
+}
+
+.max-800 {
+  max-width: 800px;
+}
+
+.max-1000 {
+  max-width: 1000px;
+}
+
+/* ========================================= */
+/* SPACING UTILITIES                          */
+/* ========================================= */
+
+.padding-small {
+  padding: var(--space-sm);
+}
+
+.padding-medium {
+  padding: var(--space-md);
+}
+
+.padding-large {
+  padding: var(--space-lg);
+}
+
+.margin-small {
+  margin: var(--space-sm);
+}
+
+.margin-medium {
+  margin: var(--space-md);
+}
+
+.margin-large {
+  margin: var(--space-lg);
+}
+
+/* ========================================= */
+/* RADIUS UTILITIES                           */
+/* ========================================= */
+
+.radius-small {
+  border-radius: var(--radius-sm);
+}
+
+.radius-medium {
+  border-radius: var(--radius-md);
+}
+
+.radius-large {
+  border-radius: var(--radius-lg);
+}
+
+.radius-pill {
+  border-radius: 999px;
+}
+
+.radius-circle {
+  border-radius: 50%;
+}
+
+/* ========================================= */
+/* BORDER UTILITIES                           */
+/* ========================================= */
+
+.border-thin {
+  border: var(--border-thin) solid var(--border-color);
+}
+
+.border-medium {
+  border: var(--border-medium) solid var(--border-color);
+}
+
+.border-thick {
+  border: var(--border-thick) solid var(--border-color);
+}
+
+.border-dashed {
+  border: var(--border-thin) dashed var(--border-color);
+}
+
+.border-dotted {
+  border: var(--border-thin) dotted var(--border-color);
+}
+/* ========================================= */
+/* FÄRG UTILITIES                           */
+/* ========================================= */
+.bg-green-dark {
+  background: var(--color-green-dark);
+}
+.bg-blue-mid {
+  background: var(--color-blue-mid);
+}
+.bg-lime-pop {
+  background: var(--color-lime-pop);
+}
+
+/* ========================================= */
+/* IKON UTILITIES                           */
+/* ========================================= */
+.icon {
+  width: 24px; /* eller 32px om du vill */
+  height: 24px;
+  display: inline-block;
+  stroke: currentColor;
+  fill: none;
+}
+
+/* Ikonfärg: neutral green 300 */
+.icon-green-300-dark {
+  color: var(--icon-green-300-dark); /* färgar ikonen via currentColor */
+}
+
+/* ----------------------------------------- */
+/* UTILITY GRADIENTS                         */
+/* ----------------------------------------- */
+.bg-ombre-vertical {
+  background: linear-gradient(
+    to bottom,
+    var(--ombre-green-dark),
+    var(--ombre-green-mid),
+    var(--ombre-blue-mid),
+    var(--ombre-blue-dark),
+    var(--ombre-lime-pop)
+  );
+}
+
+.bg-ombre-horizontal {
+  background: linear-gradient(
+    to right,
+    var(--ombre-green-dark),
+    var(--ombre-blue-mid),
+    var(--ombre-lime-pop)
+  );
+}
+
+.bg-ombre-diagonal {
+  background: linear-gradient(
+    45deg,
+    var(--ombre-green-dark),
+    var(--ombre-green-mid),
+    var(--ombre-blue-mid),
+    var(--ombre-blue-dark),
+    var(--ombre-lime-pop)
+  );
+}
+
+.bg-ombre-radial {
+  background: radial-gradient(
+    circle,
+    var(--ombre-lime-pop) 0%,
+    var(--ombre-green-mid) 40%,
+    var(--ombre-blue-dark) 100%
+  );
+}
+
+.bg-ombre-mist {
+  background: linear-gradient(
+    to bottom,
+    rgba(6, 79, 6, 0.9),
+    rgba(10, 127, 10, 0.7),
+    rgba(10, 79, 127, 0.6),
+    rgba(6, 47, 79, 0.8)
+  );
+}
+
+.bg-ombre-electric {
+  background: linear-gradient(
+    to bottom right,
+    var(--ombre-green-dark),
+    var(--ombre-lime-pop)
+  );
+}
+
+.bg-ombre-lagoon {
+  background: linear-gradient(
+    to top,
+    var(--ombre-blue-dark),
+    var(--ombre-blue-mid),
+    var(--ombre-green-mid)
+  );
+}
+
+.bg-ombre-limeburst {
+  background: linear-gradient(
+    to right,
+    var(--ombre-lime-pop),
+    var(--ombre-green-mid)
+  );
+}
+
+/* ----------------------------------------- */
+/* GRADIENT TOKEN SWATCHES (för design-system) */
+/* ----------------------------------------- */
+.bg-ombre-green-dark {
+  background: var(--ombre-green-dark);
+}
+
+.bg-ombre-green-mid {
+  background: var(--ombre-green-mid);
+}
+
+.bg-ombre-blue-mid {
+  background: var(--ombre-blue-mid);
+}
+
+.bg-ombre-blue-dark {
+  background: var(--ombre-blue-dark);
+}
+
+.bg-ombre-lime-pop {
+  background: var(--ombre-lime-pop);
+}

@@ -1,0 +1,18 @@
+/* ========================================= */
+/* BORDER TOKENS — LINJER & STILAR           */
+/* ========================================= */
+
+:root {
+  /* Tjocklek */
+  --border-thin: 1px;
+  --border-medium: 2px;
+  --border-thick: 4px;
+
+  /* Standardfärg */
+  --border-color: var(--color-green-dark);
+
+  /* Border-stilar */
+  --border-solid: solid;
+  --border-dashed: dashed;
+  --border-dotted: dotted;
+}

@@ -1,0 +1,83 @@
+/* ========================================= */
+/* FÄRG-TOKENS — BRAND, UI & NEUTRALS        */
+/* ========================================= */
+
+:root {
+  /* =========================================
+     BRAND COLORS — Zoo-tema (grön/blå/lime)
+     ========================================= */
+  --color-green-dark: #064f06; /* djup skogsgrön */
+  --color-green-mid: #0a7f0a; /* klarare grön */
+  --color-green-light: #6ac96a; /* mjuk ljusgrön */
+
+  --color-blue-soft: #b8d9ea; /* mycket ljusare blå */
+  --color-blue-light: #5fa3c7; /* ljusare blå */
+  --color-blue-mid: #0a4f7f; /* blågrön */
+  --color-blue-dark: #062f4f; /* djup blå */
+
+  --color-lime-pop: #c8ff3d; /* electric lime */
+
+  /* =========================================
+     NEUTRALS — Gråskala för UI
+     ========================================= */
+  --gray-50: #f9f9f9;
+  --gray-100: #f2f2f2;
+  --gray-200: #e5e5e5;
+  --gray-300: #cccccc;
+  --gray-400: #999999;
+  --gray-500: #666666;
+  --gray-600: #333333;
+  --gray-700: #1a1a1a;
+
+  /* NEUTRALS — TINTED */
+  --neutral-green-150: #b0e3ae;
+
+  --neutral-green-200: #8ccb89;
+
+  --neutral-green-300: #70ae6e;
+
+  --icon-green-300-dark: #4f8c4e;
+
+  --neutral-blue-50: #e6f5fa;
+
+  --neutral-blue-100: #b9e2f0;
+
+  --neutral-blue-200: #7cc7e0;
+
+  --neutral-blue-300: #0096c7; /* ny nivå, perfekt för komponentbakgrund */
+
+  /* =========================================
+     TEXT COLORS
+     ========================================= */
+  --text-primary: var(--gray-700);
+  --text-secondary: var(--gray-500);
+  --text-muted: var(--gray-400);
+  --text-inverse: var(--color-white);
+
+  /* =========================================
+     BACKGROUND COLORSujhyyy<
+     ========================================= */
+  --bg-light: var(--gray-50);
+  --bg-mid: var(--gray-100);
+  --bg-dark: var(--gray-700);
+  --bg-brand: var(--color-green-dark);
+
+  /* Tinted backgrounds (blue/green relatives) */
+  --bg-green-light: var(--neutral-green-100);
+
+  --bg-blue-light: var(--neutral-blue-100);
+
+  /* =========================================
+     SEMANTIC COLORS (valfritt men vanligt)
+     ========================================= */
+  --color-success: #2e7d32;
+  --color-warning: #f9a825;
+  --color-error: #c62828;
+  --color-info: #0277bd;
+
+  /* =========================================
+     BASIC COLORS
+     ========================================= */
+  --color-white: #ffffff;
+  --color-black: #000000;
+}

@@ -1,0 +1,10 @@
+/* ========================================= */
+/* SPACING TOKENS — VERTIKAL & HORISONTELL   */
+/* ========================================= */
+
+:root {
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+}

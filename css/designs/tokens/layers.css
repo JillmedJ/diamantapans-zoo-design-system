@@ -1,0 +1,53 @@
+/* ========================================= */
+/* LAYERS — OMBré GRADIENT TOKENS & UTILITIES */
+/* ========================================= */
+
+/* ----------------------------------------- */
+/* GRADIENT TOKENS — GREEN → BLUE → LIME     */
+/* ----------------------------------------- */
+:root {
+  --ombre-green-dark: #064f06; /* djup skogsgrön */
+  --ombre-green-mid: #0a7f0a; /* klarare grön */
+  --ombre-blue-mid: #0a4f7f; /* blågrön */
+  --ombre-blue-dark: #062f4f; /* djup blå */
+  --ombre-lime-pop: #c8ff3d; /* electric lime */
+}
+
+/* ----------------------------------------- */
+/* HERO GRADIENT                             */
+/* ----------------------------------------- */
+.hero {
+  background: linear-gradient(
+    to bottom,
+    var(--ombre-green-dark) 0%,
+    var(--ombre-green-mid) 20%,
+    var(--ombre-blue-mid) 50%,
+    var(--ombre-blue-dark) 75%,
+    var(--ombre-lime-pop) 100%
+  );
+}
+
+/* ----------------------------------------- */
+/* SECTION GRADIENT                          */
+/* ----------------------------------------- */
+.section-ombre {
+  background: linear-gradient(
+    to bottom,
+    var(--ombre-green-mid),
+    var(--ombre-blue-mid),
+    var(--ombre-blue-dark)
+  );
+}
+
+/* ----------------------------------------- */
+/* BUTTON GRADIENT                           */
+/* ----------------------------------------- */
+.btn-ombre {
+  background: linear-gradient(
+    to right,
+    var(--ombre-green-dark),
+    var(--ombre-lime-pop)
+  );
+  color: #062f4f;
+  font-weight: bold;
+}

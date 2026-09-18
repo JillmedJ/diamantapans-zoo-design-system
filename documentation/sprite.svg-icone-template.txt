@@ -1,0 +1,16 @@
+<!-- ========================================= -->
+<!-- ICON TEMPLATE — OUTLINE / STROKE VERSION  -->
+<!-- ========================================= -->
+<symbol 
+  id="icon-name-here"          <!-- byt ut till ditt ikon-id -->
+  viewBox="0 0 24 24"          <!-- byt ut om originalikonen har annat viewBox -->
+>
+  <path 
+    d="PASTE_PATH_HERE"        <!-- klistra in path-datan från originalikonen -->
+    fill="none"                <!-- vi använder aldrig fill i ditt system -->
+    stroke="currentColor"      <!-- gör att ikonen färgas av textfärg -->
+    stroke-width="2"           <!-- standard för UI-ikoner (ändra vid behov) -->
+    stroke-linecap="round"     <!-- rundade hörn -->
+    stroke-linejoin="round"    <!-- rundade hörn -->
+  />
+</symbol>

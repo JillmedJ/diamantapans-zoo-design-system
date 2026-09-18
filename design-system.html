@@ -1,0 +1,1018 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Designsystem - Diamantapans Zoo</title>
+
+    <!-- Favicon (designsystemets egen ikon, om du vill lägga en där senare) -->
+    <link rel="icon" type="image/svg+xml" href="css/designs/icons/tree.svg" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;700;900&family=Lugrasimo&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- 1. TOKENS -->
+    <link rel="stylesheet" href="css/designs/tokens/colors.css" />
+    <link rel="stylesheet" href="css/designs/tokens/spacing.css" />
+    <link rel="stylesheet" href="css/designs/tokens/radius.css" />
+    <link rel="stylesheet" href="css/designs/tokens/borders.css" />
+    <link rel="stylesheet" href="css/designs/tokens/typography.css" />
+    <link rel="stylesheet" href="css/designs/tokens/layers.css" />
+    
+    <!-- 2. DESIGN SYSTEM CSS -->
+    <link rel="stylesheet" href="css/designs/design-system.css" />
+    
+    <!-- 3. UTILITIES (ska ALLTID ligga sist)-->
+    <link rel="stylesheet" href="css/designs/utilities/utilities.css" />
+
+  </head>
+
+  <body>
+    <header>
+      <h1>Designsystem - Diamantapans Zoo</h1>
+      <p>
+        Detta är dokumentationen för färger, spacing, radius, borders,
+        typografi, gradienter, utilities och komponenter.
+      </p>
+    </header>
+
+    <!-- ========================= -->
+    <!-- ========================= -->
+    <!-- FOUNDATIONS -->
+    <!-- ========================= -->
+    <!-- ========================= -->
+
+    <!-- ========================= -->
+    <!-- FÄRGER -->
+    <!-- ========================= -->
+    <section id="colors">
+      <h2>Färger</h2>
+
+      <div class="token-box">
+        <div class="swatch-row">
+          <div
+            class="color-swatch"
+            style="background: var(--color-green-dark)"
+          ></div>
+          <span>--color-green-dark</span>
+        </div>
+
+        <div class="swatch-row">
+          <div
+            class="color-swatch"
+            style="background: var(--color-blue-mid)"
+          ></div>
+          <span>--color-blue-mid</span>
+        </div>
+
+        <div class="swatch-row">
+          <div
+            class="color-swatch"
+            style="background: var(--color-lime-pop)"
+          ></div>
+          <span>--color-lime-pop</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- TYPOGRAFI -->
+    <!-- ========================= -->
+    <section id="typography">
+      <h2>Typografi</h2>
+
+      <div class="token-box">
+        <!-- ========================= -->
+        <!-- FONTFAMILJER              -->
+        <!-- ========================= -->
+
+        <!-- Primär font -->
+        <div class="type-row">
+          <p class="type-sample" style="font-family: var(--font-primary)">
+            Playfair Display — Primär font (brödtext, UI)
+          </p>
+        </div>
+
+        <!-- Accentfont -->
+        <div class="type-row">
+          <p class="type-sample" style="font-family: var(--font-accent)">
+            Lora — Accentfont (rubriker)
+          </p>
+        </div>
+
+        <!-- Dekorativ font -->
+        <div class="type-row">
+          <p
+            class="type-sample"
+            style="
+              font-family: var(--font-decorative);
+              font-size: var(--font-h2);
+            "
+          >
+            Chewy — Dekorativ font (hero, banners)
+          </p>
+        </div>
+
+        <!-- ========================= -->
+        <!-- RUBRIKSKALA               -->
+        <!-- ========================= -->
+        <div class="type-row">
+          <h1>Rubrik H1 — Lora</h1>
+        </div>
+
+        <div class="type-row">
+          <h2>Rubrik H2 — Lora</h2>
+        </div>
+
+        <div class="type-row">
+          <h3>Rubrik H3 — Lora</h3>
+        </div>
+
+        <!-- ========================= -->
+        <!-- BRÖDTEXT                  -->
+        <!-- ========================= -->
+        <div class="type-row">
+          <p>Brödtext — Playfair Display</p>
+        </div>
+
+        <div class="type-row">
+          <p class="small">Liten text — Playfair Display</p>
+        </div>
+
+        <!-- ========================= -->
+        <!-- TYPOGRAFISKA EFFEKTER     -->
+        <!-- ========================= -->
+        <h3>Typography Effects</h3>
+
+        <div class="type-row">
+          <p
+            class="outline-text chewy-outline"
+            style="
+              font-family: var(--font-decorative);
+              font-size: var(--font-h2);
+            "
+          >
+            Outline-text — Chewy
+          </p>
+        </div>
+
+        <div class="type-row">
+          <p
+            class="outline-text lora-outline"
+            style="font-family: var(--font-accent); font-size: var(--font-h1)"
+          >
+            Outline-text — Lora
+          </p>
+        </div>
+
+        <div class="type-row">
+          <p
+            class="gradient-text chewy-gradient"
+            style="
+              font-family: var(--font-decorative);
+              font-size: var(--font-h2);
+            "
+          >
+            Gradient-text — Chewy
+          </p>
+        </div>
+
+        <div class="type-row">
+          <p
+            class="letter-spacing tagline"
+            style="font-family: var(--font-primary)"
+          >
+            Letter-spacing — Playfair Display
+          </p>
+        </div>
+
+        <div class="type-row">
+          <p
+            class="text-decor"
+            style="font-family: var(--font-accent); font-size: var(--font-h3)"
+          >
+            Text-decoration — Lora
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- SPACING -->
+    <!-- ========================= -->
+    <section id="spacing">
+      <h2>Spacing</h2>
+
+      <div class="token-box">
+        <div class="spacing-row">
+          <div class="spacing-box" style="height: var(--space-sm)"></div>
+          <span>--space-sm — 12px</span>
+        </div>
+
+        <div class="spacing-row">
+          <div class="spacing-box" style="height: var(--space-md)"></div>
+          <span>--space-md — 16px</span>
+        </div>
+        <div class="spacing-row">
+          <div class="spacing-box" style="height: var(--space-lg)"></div>
+          <span>--space-lg — 24px</span>
+        </div>
+
+        <div class="spacing-row">
+          <div class="spacing-box" style="height: var(--space-xl)"></div>
+          <span>--space-xl — 32px</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- RADIUS -->
+    <!-- ========================= -->
+    <section id="radius">
+      <h2>Radius</h2>
+
+      <div class="token-box">
+        <div class="radius-row">
+          <div class="radius-box" style="border-radius: var(--radius-sm)"></div>
+          <span>--radius-sm — 4px</span>
+        </div>
+
+        <div class="radius-row">
+          <div class="radius-box" style="border-radius: var(--radius-md)"></div>
+          <span>--radius-md — 8px</span>
+        </div>
+
+        <div class="radius-row">
+          <div class="radius-box" style="border-radius: var(--radius-lg)"></div>
+          <span>--radius-lg — 16px</span>
+        </div>
+
+        <div class="radius-row">
+          <div class="radius-box" style="border-radius: var(--radius-xl)"></div>
+          <span>--radius-xl — 24px</span>
+        </div>
+
+        <div class="radius-row">
+          <div
+            class="radius-box"
+            style="border-radius: var(--radius-pill)"
+          ></div>
+          <span>--radius-pill — 999px</span>
+        </div>
+
+        <div class="radius-row">
+          <div
+            class="radius-box"
+            style="border-radius: var(--radius-circle)"
+          ></div>
+          <span>--radius-circle — 50%</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- BORDERS -->
+    <!-- ========================= -->
+    <section id="borders">
+      <h2>Borders</h2>
+
+      <div class="token-box">
+        <!-- Tjocklek -->
+        <div class="border-row">
+          <div
+            class="border-box"
+            style="border: var(--border-thin) solid var(--border-color)"
+          ></div>
+          <span>--border-thin — 1px</span>
+        </div>
+
+        <div class="border-row">
+          <div
+            class="border-box"
+            style="border: var(--border-medium) solid var(--border-color)"
+          ></div>
+          <span>--border-medium — 2px</span>
+        </div>
+
+        <div class="border-row">
+          <div
+            class="border-box"
+            style="border: var(--border-thick) solid var(--border-color)"
+          ></div>
+          <span>--border-thick — 4px</span>
+        </div>
+
+        <!-- Stilar -->
+        <div class="border-row">
+          <div
+            class="border-box"
+            style="
+              border: var(--border-medium) var(--border-solid)
+                var(--border-color);
+            "
+          ></div>
+          <span>--border-solid</span>
+        </div>
+
+        <div class="border-row">
+          <div
+            class="border-box"
+            style="
+              border: var(--border-medium) var(--border-dashed)
+                var(--border-color);
+            "
+          ></div>
+          <span>--border-dashed</span>
+        </div>
+
+        <div class="border-row">
+          <div
+            class="border-box"
+            style="
+              border: var(--border-medium) var(--border-dotted)
+                var(--border-color);
+            "
+          ></div>
+          <span>--border-dotted</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- ========================= -->
+    <!-- VISUAL STYLES -->
+    <!-- ========================= -->
+    <!-- ========================= -->
+
+    <!-- ========================= -->
+    <!-- GRADIENTS -->
+    <!-- ========================= -->
+    <section id="gradients">
+      <h2>Gradienter</h2>
+
+      <div class="token-box">
+        <div class="gradient-demo bg-ombre-vertical"></div>
+        <div class="gradient-demo bg-ombre-horizontal"></div>
+        <div class="gradient-demo bg-ombre-diagonal"></div>
+        <div class="gradient-demo bg-ombre-radial"></div>
+        <div class="gradient-demo bg-ombre-electric"></div>
+        <div class="gradient-demo bg-ombre-lagoon"></div>
+        <div class="gradient-demo bg-ombre-limeburst"></div>
+      </div>
+      <!-- ========================= -->
+      <!-- GRADIENT TOKENS           -->
+      <!-- ========================= -->
+      <section id="gradient-tokens">
+        <h3>Gradient Tokens</h3>
+      
+        <div class="token-box">
+          <div class="swatch-row">
+            <div class="color-swatch bg-ombre-green-dark"></div>
+            <span>--ombre-green-dark</span>
+          </div>
+      
+          <div class="swatch-row">
+            <div class="color-swatch bg-ombre-green-mid"></div>
+            <span>--ombre-green-mid</span>
+          </div>
+      
+          <div class="swatch-row">
+            <div class="color-swatch bg-ombre-blue-mid"></div>
+            <span>--ombre-blue-mid</span>
+          </div>
+      
+          <div class="swatch-row">
+            <div class="color-swatch bg-ombre-blue-dark"></div>
+            <span>--ombre-blue-dark</span>
+          </div>
+      
+          <div class="swatch-row">
+            <div class="color-swatch bg-ombre-lime-pop"></div>
+            <span>--ombre-lime-pop</span>
+          </div>
+        </div>
+      </section>
+      
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- IKONER -->
+    <!-- ========================= -->
+    <section id="icons">
+      <h2>Ikoner</h2>
+
+      <p>Här visas alla SVG-ikoner som används i Diamantapans Zoo.</p>
+
+      <!-- ========================= -->
+      <!-- IKONLISTA                 -->
+      <!-- ========================= -->
+      <div class="token-box icon-green-300-dark">
+        <svg class="icon">
+          <use href="css/designs/icons/sprite.svg#zoo-paw"></use>
+        </svg>        
+        <p>Exempel på ikon med currentColor</p>
+      </div>
+
+      <div class="token-box">
+        <!-- Tree Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#outdoor-tree"></use>
+          </svg>          
+          <span>tree.svg</span>
+        </div>
+
+        <!-- Paw Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#zoo-paw"></use>
+          </svg>          
+          <span>paw.svg</span>
+        </div>
+
+        <!-- Home Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#ui-home"></use>
+          </svg>          
+          <span>home.svg</span>
+        </div>
+
+        <!-- Look Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#ui-look"></use>
+          </svg>          
+          <span>look.svg</span>
+        </div>
+
+        <!-- Retiree Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#people-retiree"></use>
+          </svg>          
+          <span>retiree.svg</span>
+        </div>
+
+        <!-- Adult Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#people-adult"></use>
+          </svg>          
+          <span>adult.svg</span>
+        </div>
+
+        <!-- Child Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#people-child"></use>
+          </svg>          
+          <span>child.svg</span>
+        </div>
+
+        <!-- Children Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#people-children"></use>
+          </svg>          
+          <span>children.svg</span>
+        </div>
+
+        <!-- Baby Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#people-baby"></use>
+          </svg>
+          <span>baby.svg</span>
+        </div>
+
+        <!-- Family Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#people-family"></use>
+          </svg>          
+          <span>family.svg</span>
+        </div>
+
+        <!-- Business Hours Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#system-business-hours"></use>
+          </svg>          
+          <span>business-hours.svg</span>
+        </div>
+
+          <!-- Prices Icon -->
+          <div class="icon-row">
+            <svg class="icon">
+              <use href="css/designs/icons/sprite.svg#system-prices"></use>
+            </svg>
+            <span>prices.svg</span>
+        </div>
+
+        <!-- Calendar Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#ui-calendar"></use>
+          </svg>          
+          <span>calendar.svg</span>
+        </div>
+        
+        <!-- Required Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#ui-required"></use>
+          </svg>          
+          <span>required.svg</span>
+        </div>
+
+        <!-- Envelope Contact Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#ui-envelope-contact"></use>
+          </svg>          
+          <span>envelope-contact.svg</span>
+        </div>
+
+        <!-- Envelope Newsletter Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#ui-envelope-newsletter"></use>
+          </svg>          
+          <span>envelope-newsletter.svg</span>
+        </div>
+
+        <!-- Phone Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#ui-phone"></use>
+          </svg>          
+          <span>phone.svg</span>
+        </div>
+        
+        <!-- Questions Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#ui-questions"></use>
+          </svg>
+          <span>questions.svg</span>
+        </div>
+
+        <!-- Location Pin Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#ui-location-pin"></use>
+          </svg>          
+          <span>location-pin.svg</span>
+        </div>
+
+        <!-- Pinned-map Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#ui-map-pin"></use>
+          </svg>          
+          <span>pinned-map.svg</span>
+        </div>
+
+        <!-- Playground Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#outdoor-playground"></use>
+          </svg>          
+          <span>playground.svg</span>
+        </div>
+
+        <!-- Restaurants Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#system-restaurants"></use>
+          </svg>          
+          <span>restaurants.svg</span>
+        </div>
+
+        <!-- Shopping Cart Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#system-shopping-cart"></use>
+          </svg>          
+          <span>shopping-cart.svg</span>
+        </div>
+
+        <!-- Submit Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#ui-arrow-right"></use>
+          </svg>          
+          <span>submit.svg (alias: ui-arrow-right)</span>
+        </div>
+
+        <!-- Todo Icon -->
+        <div class="icon-row">
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#ui-list-todo"></use>
+          </svg>          
+          <span>todo.svg</span>
+        </div>
+
+        <!-- ========================= -->
+        <!-- STORLEKSEXEMPEL           -->
+        <!-- ========================= -->
+        <h3>Storlekar</h3>
+        <div class="token-box">
+          <p>Liten ikon (.icon):</p>
+          <svg class="icon">
+            <use href="css/designs/icons/sprite.svg#outdoor-tree"></use>
+          </svg>
+          
+          <p>Stor ikon (.h1-icon):</p>
+          <svg class="h1-icon">
+            <use href="css/designs/icons/sprite.svg#outdoor-tree"></use>
+          </svg>          
+        </div>
+
+        <!-- ========================= -->
+        <!-- FÄRGSÄTTNING              -->
+        <!-- ========================= -->
+        <h3>Färgsättning med currentColor</h3>
+        <div class="token-box">
+          <p>Ikoner kan färgas med CSS genom att sätta textfärg:</p>
+
+          <div class="text-blue-mid">
+            <svg class="icon">
+              <use href="css/designs/icons/sprite.svg#ui-home"></use>
+            </svg>
+            <span>Blå ikon (text-blue-mid)</span>
+          </div>
+
+          <div class="text-lime-pop margin-small">
+            <svg class="icon">
+              <use href="css/designs/icons/sprite.svg#ui-home"></use>
+            </svg>
+            <span>Lime ikon (text-lime-pop)</span>
+          </div>
+
+          <div class="text-green-dark">
+            <svg class="icon">
+              <use href="css/designs/icons/sprite.svg#ui-home"></use>
+            </svg>
+            <span>Grön ikon (text-green-dark)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- ========================= -->
+    <!-- UTILITIES -->
+    <!-- ========================= -->
+    <!-- ========================= -->
+    <section id="utilities">
+      <h2>Utilities</h2>
+    
+      <!-- FLEX UTILITIES -->
+      <h3>Flex</h3>
+      <div class="token-box">
+        <p>.flex</p>
+        <p>.flex-center</p>
+        <p>.flex-between</p>
+        <p>.flex-wrap</p>
+      </div>
+    
+      <!-- GRID UTILITIES -->
+      <h3>Grid</h3>
+      <div class="token-box">
+        <p>.grid-2</p>
+        <p>.grid-3</p>
+        <p>.grid-auto</p>
+        
+      </div>
+    
+      <!-- TEXT UTILITIES -->
+      <h3>Text</h3>
+      <div class="token-box">
+        <p>.text-center</p>
+        <p>.text-muted</p>
+        <p>.lead</p>
+      </div>
+    
+      <!-- VISIBILITY UTILITIES -->
+      <h3>Visibility</h3>
+      <div class="token-box">
+        <p>.hidden</p>
+      </div>
+    
+      <!-- MAX-WIDTH UTILITIES -->
+      <h3>Max-width</h3>
+      <div class="token-box">
+        <p>.max-400</p>
+        <p>.max-600</p>
+        <p>.max-800</p>
+        <p>.max-1000</p>
+      </div>
+    
+      <!-- SPACING UTILITIES (WIP) -->
+      <h3>Spacing (WIP)</h3>
+      <div class="token-box">
+        <p>.padding-small</p>
+        <p>.padding-medium</p>
+        <p>.padding-large</p>
+        <p>.margin-small</p>
+        <p>.margin-medium</p>
+        <p>.margin-large</p>
+      </div>
+    
+      <!-- RADIUS UTILITIES (WIP) -->
+      <h3>Radius (WIP)</h3>
+      <div class="token-box">
+        <p>.radius-small</p>
+        <p>.radius-medium</p>
+        <p>.radius-large</p>
+        <p>.radius-pill</p>
+        <p>.radius-circle</p>
+      </div>
+    
+      <!-- BORDER UTILITIES (WIP) -->
+      <h3>Border (WIP)</h3>
+      <div class="token-box">
+        <p>.border-thin</p>
+        <p>.border-medium</p>
+        <p>.border-thick</p>
+        <p>.border-dashed</p>
+        <p>.border-dotted</p>
+      </div>
+    
+    </section>
+    <!-- ========================= -->
+    <!-- UTILITIES DEMO -->
+    <!-- ========================= -->
+    <section id="utilities-demo">
+      <h2>Utilities - Demo</h2>
+
+      <!-- FLEX DEMO -->
+      <h3>Flex</h3>
+      <p class="demo-note">
+        Demon visar hur utilities fungerar i praktiken. Flex placerar element på samma rad,
+        inklusive text samt centrerar alla berörda element.
+      </p>
+      <div class="token-box demo-flex">
+        <div class="demo-item">1</div>
+        <div class="demo-item">2</div>
+        <div class="demo-item">3</div>
+        <p class="green-300-dark">.flex-center</p>
+        <p class="green-300-dark">.flex-center</p>
+      </div>
+      
+      <!-- GRID DEMO -->
+      <h3>Grid</h3>
+      <p class="demo-note">
+        Demon visar hur utilities fungerar i praktiken. Grid placerar element i nästa grid-cell,
+        inklusive text.
+      </p>
+      <div class="token-box demo-grid">
+        <div class="demo-item">A</div>
+        <div class="demo-item">B</div>
+        <div class="demo-item">C</div>
+        <p class="green-300-dark">.grid-3</p>
+        <p class="green-300-dark">.grid-3</p>
+        <p class="green-300-dark">.grid-3</p>
+        <p class="green-300-dark">.grid-3</p>
+      </div>
+
+      <!-- TEXT DEMO -->
+      <h3>Text</h3>
+      <div class="token-box">
+        <p class="text-center">Detta är centrerad text (.text-center)</p>
+        <p class="lead">Detta är större text (.lead)</p>
+        <p class="text-muted">Detta är dämpad text (.text-muted)</p>
+      </div>
+
+      <!-- VISIBILITY DEMO -->
+      <h3>Visibility</h3>
+      <div class="token-box">
+        <p>Denna text är synlig.</p>
+        <p class="hidden">Denna text är dold (.hidden)</p>
+      </div>
+
+      <!-- SPACING DEMO -->
+      <h3>Spacing</h3>
+      <div class="token-box demo-spacing">
+        <div class="demo-item padding-medium">Padding</div>
+        <div class="demo-item margin-medium">Margin</div>
+      </div>
+
+      <!-- RADIUS DEMO -->
+      <h3>Radius</h3>
+      <div class="token-box demo-radius">
+        <div class="demo-item radius-small">sm</div>
+        <div class="demo-item radius-medium">md</div>
+        <div class="demo-item radius-large">lg</div>
+      </div>
+
+    </section>
+
+    
+
+    <!-- ========================= -->
+    <!-- ========================= -->
+    <!-- COMPONENTS -->
+    <!-- ========================= -->
+    <!-- ========================= -->
+
+    <!-- ========================= -->
+    <!-- ========================= -->
+    <!-- COMPONENTS DEMO-->
+    <!-- ========================= -->
+    <!-- ========================= -->
+
+    <section id="components">
+      <h2>Komponenter</h2>
+
+      <!-- ========================= -->
+      <!-- NAVIGATION DEMO           -->
+      <!-- ========================= -->
+      <h3>Navigation</h3>
+      <div class="token-box">
+        <nav
+          class="padding-medium radius-medium border-thin bg-green-dark text-light"
+        >
+          <ul style="display: flex; gap: var(--space-md); list-style: none">
+            <li class="text-green-mid lead">Hem</li>
+            <li class="text-green-mid lead">Djur</li>
+            <li class="text-green-mid lead">Galleri</li>
+            <li class="text-green-mid lead">Kontakt</li>
+          </ul>
+        </nav>
+        <p>Exempel på navigation med spacing-, radius- och border-tokens.</p>
+      </div>
+
+      <!-- ========================= -->
+      <!-- HERO DEMO                 -->
+      <!-- ========================= -->
+      <h3>Hero</h3>
+      <div class="token-box">
+        <section class="hero padding-large radius-large text-light">
+          <h1 class="text-h1">Diamantapans Zoo</h1>
+          <p class="text-body">Upptäck en magisk värld av djur och natur.</p>
+        </section>
+        <p>Hero-sektionen använder din ombré-gradient från layers.css.</p>
+      </div>
+
+      <!-- ========================= -->
+      <!-- CARD DEMO                 -->
+      <!-- ========================= -->
+      <h3>Djurkort</h3>
+      <div class="token-box">
+        <div
+          class="padding-medium radius-medium border-thin bg-white"
+          style="max-width: 250px"
+        >
+          <img
+            src="visuals/animals/monkey.jpg"
+            alt="Apa"
+            class="radius-medium"
+          />
+          <h4 class="text-h3 margin-small">Diamantapan</h4>
+          <p class="text-body">En lekfull och nyfiken liten vän.</p>
+        </div>
+        <p>Exempel på djurkort med spacing-, radius- och border-tokens.</p>
+      </div>
+
+      <!-- ========================= -->
+      <!-- GALLERY DEMO              -->
+      <!-- ========================= -->
+      <h3>Galleri</h3>
+      <div class="token-box">
+        <div
+          class="gallery padding-medium radius-medium border-thin"
+          style="
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-md);
+          "
+        >
+          <img
+            src="visuals/animals/monkey.jpg"
+            alt="Apa"
+            class="radius-medium"
+          />
+          <img
+            src="visuals/animals/bird.jpg"
+            alt="Fågel"
+            class="radius-medium"
+          />
+          <img
+            src="visuals/animals/fish.jpg"
+            alt="Fisk"
+            class="radius-medium"
+          />
+        </div>
+        <p>Exempel på galleri med grid-layout och radius-tokens.</p>
+      </div>
+
+      <!-- ========================= -->
+      <!-- FORMS DEMO                -->
+      <!-- ========================= -->
+      <h3>Formulär</h3>
+      <div class="token-box">
+        <form
+          class="padding-medium radius-medium border-thin"
+          style="max-width: 300px"
+        >
+          <label class="text-body margin-small">Namn</label>
+          <input
+            type="text"
+            class="padding-small radius-small border-thin"
+            placeholder="Skriv ditt namn"
+          />
+
+          <label class="text-body margin-small">Meddelande</label>
+          <textarea
+            class="padding-small radius-small border-thin"
+            placeholder="Skriv ett meddelande"
+          ></textarea>
+
+          <button
+            class="padding-small radius-medium bg-green-dark text-light margin-medium"
+          >
+            Skicka
+          </button>
+        </form>
+        <p>Formulär med spacing-, radius- och border-tokens.</p>
+      </div>
+
+      <!-- ========================= -->
+      <!-- TABLES DEMO               -->
+      <!-- ========================= -->
+      <h3>Tabell</h3>
+      <div class="token-box">
+        <table
+          class="padding-medium radius-medium border-thin"
+          style="width: 100%; border-collapse: collapse"
+        >
+          <thead>
+            <tr class="bg-green-dark text-light">
+              <th class="padding-small border-thin">Djur</th>
+              <th class="padding-small border-thin">Art</th>
+              <th class="padding-small border-thin">Ålder</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="padding-small border-thin">Diamantapan</td>
+              <td class="padding-small border-thin">Apa</td>
+              <td class="padding-small border-thin">4 år</td>
+            </tr>
+            <tr>
+              <td class="padding-small border-thin">Blåfågel</td>
+              <td class="padding-small border-thin">Fågel</td>
+              <td class="padding-small border-thin">2 år</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Tabell med tokens för spacing, borders och bakgrund.</p>
+      </div>
+
+      <!-- ========================= -->
+      <!-- FOOTER DEMO               -->
+      <!-- ========================= -->
+      <h3>Footer</h3>
+      <div class="token-box">
+        <footer class="padding-medium radius-medium bg-blue-mid text-light">
+          <p class="text-body">
+            © 2026 Diamantapans Zoo – Alla rättigheter reserverade
+          </p>
+        </footer>
+        <p>Footer med bakgrundsfärg, spacing och typografi-tokens.</p>
+      </div>
+
+      <!-- ========================= -->
+      <!-- TODO DEMO                 -->
+      <!-- ========================= -->
+      <h3>Todo-lista</h3>
+      <div class="token-box">
+        <ul
+          class="padding-medium radius-medium border-thin"
+          style="list-style: none; padding-left: 0"
+        >
+          <li class="padding-small border-thin radius-small margin-small">
+            Mata aporna
+          </li>
+          <li class="padding-small border-thin radius-small margin-small">
+            Städa fågelvoljären
+          </li>
+          <li class="padding-small border-thin radius-small margin-small">
+            Fyll på fiskdammen
+          </li>
+        </ul>
+        <p>Todo-lista med spacing-, radius- och border-tokens.</p>
+      </div>
+    </section>
+  </body>
+</html>

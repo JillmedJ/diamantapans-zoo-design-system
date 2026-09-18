@@ -1,0 +1,146 @@
+/* ========================================= */
+/* TYPOGRAPHY TOKENS — FONTER & SKALOR       */
+/* ========================================= */
+
+:root {
+  /* ============================
+     FONTFAMILJER
+     ============================ */
+  --font-primary: "Playfair Display", serif; /* brödtext, UI */
+  --font-accent: "Lora", serif; /* rubriker */
+  --font-decorative: "Chewy", cursive; /* hero, banners */
+
+  /* ============================
+     RUBRIKER (accentfont)
+     ============================ */
+  --font-h1: 3rem;
+  --font-h2: 2.25rem;
+  --font-h3: 1.75rem;
+
+  /* ============================
+     BRÖDTEXT (primär font)
+     ============================ */
+  --font-body: 1rem;
+  --font-body-lg: 1.25rem; /* lead-text */
+  --font-small: 0.875rem;
+
+  /* ============================
+     FONTVIKTER
+     ============================ */
+  --weight-light: 300;
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+  --weight-black: 900;
+
+  /* ============================
+     LINE HEIGHT
+     ============================ */
+  --line-tight: 1.1;
+  --line-normal: 1.4;
+  --line-loose: 1.6;
+}
+
+/* ========================================= */
+/* TYPOGRAPHY — BASSTILAR                    */
+/* ========================================= */
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-body);
+  line-height: var(--line-loose);
+  font-weight: var(--weight-normal);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-accent);
+  line-height: var(--line-tight);
+  margin-bottom: var(--space-md);
+  text-shadow: 2px 2px 4px var(--color-green-mid);
+}
+
+h1 {
+  font-size: var(--font-h1);
+}
+
+h2 {
+  font-size: var(--font-h2);
+}
+
+h3 {
+  font-size: var(--font-h3);
+}
+
+p.small {
+  font-size: var(--font-small);
+  line-height: var(--line-normal);
+}
+
+/* Tagline-stil */
+.tagline {
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.9rem;
+  font-weight: var(--weight-medium);
+  text-shadow: 1px 1px 2px var(--color-green-mid);
+}
+
+/* ========================================= */
+/* TYPOGRAPHY — EFFEKTER                     */
+/* ========================================= */
+
+/* Gradient-text (Chewy) */
+.gradient-text {
+  background: linear-gradient(
+    to right,
+    var(--color-lime-pop),
+    var(--color-green-mid),
+    var(--color-blue-mid)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Letter-spacing (Playfair) */
+.letter-spacing {
+  letter-spacing: 0.08em;
+}
+
+/* Text-decoration (Lora) */
+.text-decor {
+  text-decoration: underline;
+  text-decoration-color: var(--color-green-mid);
+  text-decoration-thickness: 2px;
+}
+
+.outline-text.chewy-outline {
+  -webkit-text-stroke: 2px var(--color-green-dark); /* tunn kontur */
+  color: var(--color-lime-pop); /* fyllning synlig */
+  font-weight: var(--weight-black); /* tjock fyllning */
+  text-shadow: 2px 2px 4px var(--color-green-mid);
+}
+
+/* Lora Outline*/
+.outline-text.lora-outline {
+  -webkit-text-stroke: 1.5px var(--color-green-dark);
+  color: transparent;
+  font-weight: var(--weight-bold);
+  text-shadow: 1px 1px 2px var(--color-green-mid);
+} /* ← DENNA SAKNADES */
+
+/* Chewy Gradient*/
+.gradient-text.chewy-gradient {
+  background: linear-gradient(
+    to right,
+    var(--color-lime-pop),
+    var(--color-green-mid),
+    var(--color-blue-mid)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: var(--weight-black);
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
